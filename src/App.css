@@ -1,0 +1,49 @@
+.App {
+  text-align: left;
+}
+
+nav {
+  border-bottom: 4px solid #a5a5a5;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  padding:10px;
+  position:sticky;
+  top:0;
+  z-index: 999;
+  width: 100%;
+  background: white;
+}
+
+nav ul {
+  list-style-type: none;
+  flex:1;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 16px 32px;
+}
+
+nav a:hover {
+  background: gray;
+  color: white;
+  text-decoration:none;
+}
+
+.clear{
+  clear: both;
+}
+
+h5{
+  padding:20px
+}
