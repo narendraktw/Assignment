@@ -67,7 +67,7 @@ export default function Login() {
           Login
         </Button>
 
-        <Button block disabled={!handleLogin()} onClick={handleReset} type="reset">
+        <Button block disabled={!handleLogin()} onClick={handleReset} type="submit">
           Reset
         </Button>
       </form>
