@@ -1,10 +1,10 @@
-import React,{useState,useEffect} from 'react'
-import { getUser } from '../Utils/Common';
+import React, { useState, useEffect } from 'react'
+import '../Css/UserDetail.css'
 
-function UserDetail({match}) {
+function UserDetail({ match }) {
     const id = match.params.id;
     const [usersData, setUsersData] = useState([]);
-   
+
     useEffect(() => {
         console.log('loading')
         const fetchLogedInUser = async () => {
@@ -21,11 +21,13 @@ function UserDetail({match}) {
     }, [])
 
     return (
-        <div>
-            <h2>User Details</h2>
-            <img src={usersData.avatar}></img>
-            <h4>{usersData.first_name} {usersData.last_name}</h4>
-            <h6>{usersData.email}</h6>
+        <div className="userDetail">
+            <h5>User Details</h5>
+            <div className="userInfo">
+                <img src={usersData.avatar}></img>
+                <h4>{usersData.first_name} {usersData.last_name}</h4>
+                <h6>{usersData.email}</h6>
+            </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ function Dashboard() {
     const user = getUser();
     var columns = [
         { title: "id", field: "id", hidden: true },
-        { title: "Avatar", render: rowData => <img alt='avatar' width={40} src={rowData == undefined ? " " : rowData.avatar} /> },
+        { title: "Avatar", render: rowData => <img alt='avatar' width={40} src={rowData === undefined ? " " : rowData.avatar} /> },
         { title: "First name", field: "first_name" },
         { title: "Last name", field: "last_name" },
         { title: "email", field: "email" }
