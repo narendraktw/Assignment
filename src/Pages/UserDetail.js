@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../Css/UserDetail.css'
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 function UserDetail({ match }) {
     const id = match.params.id;
@@ -26,7 +27,7 @@ function UserDetail({ match }) {
             <div className="userInfo">
                 <img src={usersData.avatar}></img>
                 <h4>{usersData.first_name} {usersData.last_name}</h4>
-                <h6>{usersData.email}</h6>
+                <h6><MailOutlineIcon/> {usersData.email}</h6>
             </div>
         </div>
     )
